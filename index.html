@@ -3,13 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="./images/brenda-favicon.jpg"/>
+    <link rel="icon" type="image/png" href="./images/brenda-favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>always</title>
     <link rel="stylesheet" href="https://stackedit.io/style.css" />
     <style>
+        .compare-dark-reader-menu {
+            vertical-align: top;
+            margin-left: 20px;
+            width: 25%;
+        }
+
+        .compare-dark-reader {
+            display: inline-block;
+        }
+
+        .compare-dark-reader>img {
+            display: inline;
+        }
+
+        .compare-dark-reader > img:first-child {
+            width: 70%;
+        }
+
         .stackedit__html {
-            max-width: 1000px;
+            max-width: 1135px;
             margin-bottom: 0;
         }
 
@@ -30,16 +48,30 @@
             ;
         }
 
-        li > ul {
+        li>ul {
             padding-top: 10px;
         }
 
         a {
             text-decoration: none;
         }
-        
+
         li::marker {
             font-weight: bold;
+        }
+
+
+        /* Resize */
+        @media only screen and (max-width: 950px) {
+            .compare-dark-reader-menu {
+                margin-left: 0;
+            }
+
+            .compare-dark-reader,
+            .compare-dark-reader>img {
+                display: block;
+                width: auto;
+            }
         }
     </style>
 </head>
@@ -49,8 +81,8 @@
         <h2 id="dicas-para-personalização-do-windows-10">Dicas para personalização do Windows 10</h2>
         <p>Neste tópico iremos aprender a como colocar o Windows 10 no tema escuro com os seguintes passos:</p>
         <ol>
-            <li>Abrir as configurações do Windows. Pode ser utilizado o atalho <code>Win + I</code>.<br>
-                Após isso provavelmente irá aparecer uma tela semelhante a essa:<br>
+            <li>Abrir as configurações do Windows. Pode ser utilizado o atalho <code>Win + I</code>. Após isso
+                provavelmente irá aparecer uma tela semelhante a essa:<br>
                 <img src="./images/config-screen.png" alt="Tela de configuração">
             </li>
             <li>Após isso vá em “Personalização”<br>
@@ -112,6 +144,23 @@
                 clicando nesse botão:<br>
                 <img src="./images/apply-dark-reader.png" alt="Aplicar Dark Reader em uma página de forma manual">
             </li>
+            <h3>Agora vamos testar como fica:</h3>
+            <div>
+                <p>Página <strong><em>sem</em></strong> Dark Reader<br>
+                <div class="compare-dark-reader">
+                    <img src="./images/page-without-dark-reader.png" alt="Página com o Dark Reader não aplicado">
+                    <img class="compare-dark-reader-menu" src="./images/page-without-dark-reader-menu.png"
+                        alt="Menu do Dark Reader com a página não aplicada">
+                </div>
+                </p>
+                <p>Página <strong><em>com</em></strong> Dark Reader<br>
+                <div class="compare-dark-reader">
+                    <img src="./images/page-with-dark-reader.png" alt="Página com o Dark Reader aplicado">
+                    <img class="compare-dark-reader-menu" src="./images/page-with-dark-reader-menu.png"
+                        alt="Menu do Dark Reader com a página aplicada">
+                </div>
+                </p>
+            </div>
         </ol>
         <p>Prontinho, qualquer dúvida é só conversar comigo 🖤</p>
     </div>
